@@ -2153,6 +2153,587 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "TPS259802:TPS259802ONRGER"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 12.7 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "TPS259802ONRGER"
+				(at 13.462 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "TPS259802:IC24_TPS259802ONRGER_TEX"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/gpn/tps25980"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "TPS259802ONRGER"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "IC24_TPS259802ONRGER_TEX IC24_TPS259802ONRGER_TEX-M IC24_TPS259802ONRGER_TEX-L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TPS259802ONRGER_1_1"
+				(rectangle
+					(start 2.54 0)
+					(end 22.86 -34.29)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at 0 -2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -1.27 0)
+					(length 2.54)
+					(hide yes)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -1.27 0)
+					(length 2.54)
+					(hide yes)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 11.43 -36.83 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 11.43 -36.83 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -11.43 0)
+					(length 2.54)
+					(name "EN/UVLO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 -16.51 0)
+					(length 2.54)
+					(name "ITIMER"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 -19.05 0)
+					(length 2.54)
+					(name "ILIM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 -21.59 0)
+					(length 2.54)
+					(name "IMON"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 -24.13 0)
+					(length 2.54)
+					(name "RETRY_DLY"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 -26.67 0)
+					(length 2.54)
+					(name "NRETRY"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -29.21 0)
+					(length 2.54)
+					(name "LDSTRT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 25.4 -11.43 180)
+					(length 2.54)
+					(name "PG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 11.43 -36.83 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 -31.75 0)
+					(length 2.54)
+					(name "dVdt"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -1.27 0)
+					(length 2.54)
+					(hide yes)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 25.4 -2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 25.4 -2.54 180)
+					(length 2.54)
+					(hide yes)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 25.4 -2.54 180)
+					(length 2.54)
+					(hide yes)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 25.4 -2.54 180)
+					(length 2.54)
+					(hide yes)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 25.4 -2.54 180)
+					(length 2.54)
+					(hide yes)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 25.4 -2.54 180)
+					(length 2.54)
+					(hide yes)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 25.4 -2.54 180)
+					(length 2.54)
+					(hide yes)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 25.4 -2.54 180)
+					(length 2.54)
+					(hide yes)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -5.08 0)
+					(length 2.54)
+					(name "PAD_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 13.97 -36.83 90)
+					(length 2.54)
+					(name "PAD_GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Transistor_FET:2N7002"
 			(pin_names
 				(offset 0)
@@ -10643,6 +11224,160 @@
 		)
 	)
 	(symbol
+		(lib_id "TPS259802:TPS259802ONRGER")
+		(at 271.78 125.73 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5a4da49-f4c3-48bf-8f1b-3334e58fbe03")
+		(property "Reference" "U2"
+			(at 284.48 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "TPS259802ONRGER"
+			(at 284.48 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "TPS259802:IC24_TPS259802ONRGER_TEX"
+			(at 271.78 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tps25980"
+			(at 271.78 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 271.78 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "17"
+			(uuid "bdc94ace-723a-4b1c-be00-86598809318e")
+		)
+		(pin "13"
+			(uuid "db1b46e4-f67e-4d25-8453-8ac95f413130")
+		)
+		(pin "4"
+			(uuid "5e9f4f99-3c65-4d0b-a9bd-dbf9bb169f4b")
+		)
+		(pin "9"
+			(uuid "0ef8b6f7-77f4-4add-acbc-a0118a423ee3")
+		)
+		(pin "3"
+			(uuid "95e99c15-d0a6-4fd7-8eb1-df54f66da8b9")
+		)
+		(pin "8"
+			(uuid "597c7a96-61b7-4577-b5b8-b4913fd630f3")
+		)
+		(pin "1"
+			(uuid "cc599e78-2225-4b42-8db6-4d8759d46721")
+		)
+		(pin "7"
+			(uuid "94d8ba75-78ad-4efd-bff9-44d3d6209d5b")
+		)
+		(pin "2"
+			(uuid "95030c69-217b-42f5-8d45-6d99b882fc25")
+		)
+		(pin "6"
+			(uuid "14c27aad-f810-4ea2-ae22-82fcd09d32e0")
+		)
+		(pin "5"
+			(uuid "d29c7cdf-84f6-44df-9d5d-ce93882c4808")
+		)
+		(pin "10"
+			(uuid "dd151b93-160f-40c5-a693-73d6f8c292a8")
+		)
+		(pin "11"
+			(uuid "3b66511c-d3e2-4a4f-adbd-67d1e18aada2")
+		)
+		(pin "12"
+			(uuid "13315698-549d-420e-85d5-773de13cce5f")
+		)
+		(pin "14"
+			(uuid "85be059e-97d2-40d4-b60c-2e1b34acc9fd")
+		)
+		(pin "15"
+			(uuid "8999e251-4d84-41c1-ae20-5b652118bdcb")
+		)
+		(pin "16"
+			(uuid "d7504a78-481d-4235-aac8-06667d3b4912")
+		)
+		(pin "18"
+			(uuid "39926f44-fbc6-4063-b60e-7308c294bbc7")
+		)
+		(pin "20"
+			(uuid "67cb9355-a13e-4c64-9368-ee7dbd9ba0a4")
+		)
+		(pin "21"
+			(uuid "c4533a7a-79c6-49da-87fe-d1c2790f5d5d")
+		)
+		(pin "19"
+			(uuid "15a5290e-79a0-4d38-add2-24749dfd9b98")
+		)
+		(pin "25"
+			(uuid "766013e9-bd67-4143-8144-8922e31c2c1d")
+		)
+		(pin "23"
+			(uuid "2acf5460-ce78-4c9d-bc2f-d18b53b268c0")
+		)
+		(pin "22"
+			(uuid "c0615f17-7302-4527-b7b0-58e9c1866690")
+		)
+		(pin "24"
+			(uuid "372dcca7-5e1d-4327-aa25-586f3ed14843")
+		)
+		(pin "26"
+			(uuid "d5db37ab-9ceb-4a8a-a313-f8cb31008efd")
+		)
+		(instances
+			(project "SATA_board"
+				(path "/9cfc791c-e86c-47ae-90e7-afb8e618c6a7"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 147.32 151.13 0)
 		(unit 1)
@@ -11045,6 +11780,160 @@
 			(project "SATA_board"
 				(path "/9cfc791c-e86c-47ae-90e7-afb8e618c6a7"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TPS259802:TPS259802ONRGER")
+		(at 271.78 176.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c66a1a88-6685-407a-81e4-c7602ebff4db")
+		(property "Reference" "U3"
+			(at 284.48 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "TPS259802ONRGER"
+			(at 284.48 173.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "TPS259802:IC24_TPS259802ONRGER_TEX"
+			(at 271.78 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tps25980"
+			(at 271.78 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 271.78 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "17"
+			(uuid "41fde866-adbc-428a-9c65-d7e689b6f687")
+		)
+		(pin "13"
+			(uuid "9cfa941e-f25c-4c6b-b193-27fbab66f4e5")
+		)
+		(pin "4"
+			(uuid "db245700-2470-4185-af69-043eea875330")
+		)
+		(pin "9"
+			(uuid "227e1ae6-4f8a-45ab-8340-6ccfb6a66633")
+		)
+		(pin "3"
+			(uuid "ef2a3186-2a2b-4692-b09b-56e6f3ffd2ef")
+		)
+		(pin "8"
+			(uuid "31719d1d-f650-4ce8-aaa7-9b50cc1e7b20")
+		)
+		(pin "1"
+			(uuid "b07011e1-a492-463b-b9c9-fe2e1964651b")
+		)
+		(pin "7"
+			(uuid "63a8ac6a-4d12-4bb4-b392-3ca6d4857af1")
+		)
+		(pin "2"
+			(uuid "224a4565-9624-4206-9089-05ee20171c3d")
+		)
+		(pin "6"
+			(uuid "f4a01e0f-226d-48a8-a129-17bb4f2e61d5")
+		)
+		(pin "5"
+			(uuid "0165e844-b39a-435f-ab38-755055daf196")
+		)
+		(pin "10"
+			(uuid "cbb93472-321a-4193-9196-ad1551ac596e")
+		)
+		(pin "11"
+			(uuid "2ac2f098-8b4b-45d3-bf54-020a1e0fec20")
+		)
+		(pin "12"
+			(uuid "5b89bae5-92e8-4007-b188-07371dc93c46")
+		)
+		(pin "14"
+			(uuid "f74e05ae-6b75-47bb-ba8e-1a3ba46c1b8b")
+		)
+		(pin "15"
+			(uuid "52ffd7bc-304f-4233-ad77-b98b894b4952")
+		)
+		(pin "16"
+			(uuid "d2a69679-5d8b-448b-92f7-c324f0c076a8")
+		)
+		(pin "18"
+			(uuid "59966d0b-8ab5-4cf7-85dc-07751be301e8")
+		)
+		(pin "20"
+			(uuid "6bfb2008-d026-4fb1-a0d3-c4e5efb10bb2")
+		)
+		(pin "21"
+			(uuid "164f01d7-ebaa-46d0-ad7b-7f48417ff5bf")
+		)
+		(pin "19"
+			(uuid "e2d8e808-5f59-4b9c-82cb-c2d5147f3a3c")
+		)
+		(pin "25"
+			(uuid "90bc13f7-01b0-4571-81e0-d4260a910d06")
+		)
+		(pin "23"
+			(uuid "e2ea867c-1d05-41a1-bbe3-0419ec81e0b4")
+		)
+		(pin "22"
+			(uuid "bbddc398-5fa7-4255-af91-8aafcbc57784")
+		)
+		(pin "24"
+			(uuid "aed4d9df-4579-492f-9d44-c7d0d7a1ddf0")
+		)
+		(pin "26"
+			(uuid "49aa74b5-027d-404b-876c-44a909572fd5")
+		)
+		(instances
+			(project "SATA_board"
+				(path "/9cfc791c-e86c-47ae-90e7-afb8e618c6a7"
+					(reference "U3")
 					(unit 1)
 				)
 			)
