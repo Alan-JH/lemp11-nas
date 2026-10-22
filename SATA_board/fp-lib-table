@@ -3,4 +3,5 @@
 	(lib (name "67800-8025") (type "KiCad") (uri "${KIPRJMOD}/lib/67800-8025.pretty") (options "") (descr ""))
 	(lib (name "47018-2001") (type "KiCad") (uri "${KIPRJMOD}/lib/47018-2001.pretty") (options "") (descr ""))
 	(lib (name "TPS259802") (type "KiCad") (uri "${KIPRJMOD}/lib/TPS259802.pretty") (options "") (descr ""))
+	(lib (name "LM5116") (type "KiCad") (uri "${KIPRJMOD}/lib/LM5116.pretty") (options "") (descr ""))
 )

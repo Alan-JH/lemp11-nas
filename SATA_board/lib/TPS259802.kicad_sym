@@ -2,7 +2,7 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
-	(symbol "TPS259802ONRGER"
+	(symbol "TPS259804ONRGER"
 		(pin_names
 			(offset 0.254)
 		)
@@ -12,7 +12,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at 12.7 3.81 0)
+			(at 12.7 3.556 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21,8 +21,8 @@
 				)
 			)
 		)
-		(property "Value" "TPS259802ONRGER"
-			(at 13.462 1.27 0)
+		(property "Value" "TPS259804ONRGER"
+			(at 12.7 1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -66,7 +66,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "TPS259802ONRGER"
+		(property "ki_keywords" "TPS259804ONRGER"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -88,7 +88,7 @@
 				)
 			)
 		)
-		(symbol "TPS259802ONRGER_1_1"
+		(symbol "TPS259804ONRGER_1_1"
 			(rectangle
 				(start 2.54 0)
 				(end 22.86 -34.29)
@@ -98,62 +98,6 @@
 				)
 				(fill
 					(type background)
-				)
-			)
-			(pin power_in line
-				(at 0 -2.54 0)
-				(length 2.54)
-				(name "IN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -1.27 0)
-				(length 2.54)
-				(hide yes)
-				(name "IN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -1.27 0)
-				(length 2.54)
-				(hide yes)
-				(name "IN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
 				)
 			)
 			(pin power_in line
@@ -375,176 +319,6 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -1.27 0)
-				(length 2.54)
-				(hide yes)
-				(name "IN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 25.4 -2.54 180)
-				(length 2.54)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 25.4 -2.54 180)
-				(length 2.54)
-				(hide yes)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 25.4 -2.54 180)
-				(length 2.54)
-				(hide yes)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "19"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 25.4 -2.54 180)
-				(length 2.54)
-				(hide yes)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "20"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 25.4 -2.54 180)
-				(length 2.54)
-				(hide yes)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "21"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 25.4 -2.54 180)
-				(length 2.54)
-				(hide yes)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "22"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 25.4 -2.54 180)
-				(length 2.54)
-				(hide yes)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "23"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 25.4 -2.54 180)
-				(length 2.54)
-				(hide yes)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at 0 -5.08 0)
 				(length 2.54)
 				(name "PAD_IN"
@@ -578,6 +352,123 @@
 							(size 1.27 1.27)
 						)
 					)
+				)
+			)
+			(pin power_in line
+				(at 0 -2.54 0)
+				(length 2.54)
+				(name "IN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "[1-3,16]"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 25.4 -2.54 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "[17-24]"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "TPS259803ONRGER"
+		(extends "TPS259804ONRGER")
+		(property "Reference" "U"
+			(at 12.7 3.556 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "TPS259803ONRGER"
+			(at 12.7 1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "TPS259804ONRGER"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "IC24_TPS259802ONRGER_TEX IC24_TPS259802ONRGER_TEX-M IC24_TPS259802ONRGER_TEX-L"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
