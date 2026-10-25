@@ -4,6 +4,10 @@ Schematic review status as of 2026-10-22 (rev v9). Footprints are not finalised 
 
 ## Open questions
 
+- [ ] **Run Update PCB from Schematic (F8).** The PCB doesn't have the MP fields yet, and D6/D7/D12/D15/D16 still say BAT54J there. Also delete the empty `KLC_S3.3` column added to about 160 symbols in the Symbol Fields Table; it causes about 160 DRC parity warnings.
+- [ ] **MP fixes:** U10 → `TLV75533PDBVR` (TLV75533PDBV isn't orderable). Remove the trailing spaces in `GMC21X7R106K25NT ` and `GCM1555C1H120FA16D `. Add MPs for the DNP snubber parts R75/R76/C83/C84.
+- [ ] **Confirm:** WPC2512QLR013FYR (R35, 13 mΩ). The Littelfuse WPC2512 family exists, but I couldn't find a 13 mΩ listing. Also confirm KAM15CR70J475MT is 0603, and GMC21X7R106K25NT (Cal-Chip?) as a part. For C29/C32/C81/C82 on +12V, a known 25 V X7R 0805, or a 1206/35 V part, keeps more capacitance under DC bias.
+- [ ] **BAT54WS is SOD-323, footprint is D_SOD-323F.** It usually fits, but D_SOD-323 matches the gull-wing leads exactly.
 - [ ] **C28 (100 µF, EN_B delay) type:** must be a low-leakage ceramic (X5R/X7R, ≥ 6.3 V), not an electrolytic. The EN_B divider only has ~7 µA of margin before leakage keeps EN_B below the 1.2 V threshold forever (final 2.39 V, Thevenin 160 kΩ). A 6.3 V electrolytic is spec'd up to ~6 µA leakage. With a ceramic, expect ~6–11 s (DC-bias and ±20% tolerance) instead of the ideal 11.2 s.
 - [ ] **Measure the spin-up profile** with IMON logging (1 kHz) to confirm the 3–8 s high-current phase on the WD100EDAZ.
 - [ ] **Firmware:** PB6 (DIS_A) / PB7 (DIS_B) high = branch off. Releasing DIS_B restarts the full ~11 s RC delay (Q12 discharges C28), so the MCU can only add delay, never shorten it.
@@ -36,21 +40,14 @@ Schematic review status as of 2026-10-22 (rev v9). Footprints are not finalised 
 - [ ] **U8 USBLC6 layout:** it's wired flow-through (connector → pin 6/4, pin 1/3 → MCU). Pins 1/6 and 3/4 are the same net inside, so route the line straight across the pads with U8 close to J2.
 - [ ] **VIN_ADC clamp leakage:** D12 (BAT54J to 3.3 V) reverse leakage rises with temperature. ~10 µA hot into the 1.3 kΩ divider source ≈ 0.1 V error at VIN scale. Fine for telemetry; use a low-leakage diode if better accuracy is needed.
 - [ ] **USB series R (optional):** R47/R48 10 Ω are harmless but not needed on G4 FS USB; could be 0 Ω.
-- [ ] **Crystal Y1:** check the 12 pF load caps against the ABM3B load capacitance spec.
 - [ ] **VDDA:** VDDA is tied straight to +3.3V. Consider a dedicated 1 µF + 10 nF (optionally a ferrite) for ADC accuracy.
 - [ ] **PB4 dead-battery pull-down:** PA10 is tied to GND, so the UCPD 5.1 kΩ pull-down on PB4 stays off. Also set `UCPD1_DBDIS` in `PWR_CR3` in firmware as a belt-and-braces.
 
 ## Footprints / layout (WIP) – open
 
-- [ ] **In2 has no plane under the LM5175 power stage.** The In2 +12V zone only covers x ≈ 76–136 mm, so the bottom-side FETs (Q1–Q4, R3, D2/D3) see In1 GND ~1.3 mm away through the core. Fill In2 with GND under the LM5175 stage (and ideally GND everywhere In2 isn't +12V) so the bottom hot loops have a reference ~0.2 mm away.
-- [ ] **Local HF caps on the bottom at the half-bridges.** The input/output ceramics are on top and the FETs on the bottom, so every hot loop goes through vias. Add 2–3 small caps (100 nF + 1 µF, 0603/0805) on the bottom right at Q1 drain ↔ Q2/R3 return (VIN_F side), and at Q3 drain ↔ Q4/R3 return (+12V side). Same idea for Q8/Q9 on +12V.
-- [ ] **Zones are stale:** refill (B). The nRST and 5V_USB vias show 0 mm clearance to the In1 GND zone.
-- [ ] **194 unconnected items**, mostly GND (stitching/plane vias not placed yet).
-- [ ] **TPS25980 footprint clearance:** pad-to-pad 0.142/0.162 mm vs the 0.2 mm board rule (U3–U6, 22 each). Check against TI's land pattern and the fab minimum, then add a footprint-level clearance override or custom rule instead of ignoring the errors.
-- [ ] **Mounting holes H1–H4:** copper too close to the board edge.
-- [ ] **R32/C50 courtyard overlap.**
+- [ ] **LM5175 hot loops are long (~15–20 mm)** and are still to be checked on the bench. DNP snubbers R76/C84 (SW1) and R75/C83 (SW2) are fitted. **R75/R76 = 470 Ω is far too high to damp anything:** start at about 2.2–4.7 Ω. To tune: measure the ring frequency f0, add C across the node until f0 halves (then Cpar = Cadd/3), and set R = √(L/Cpar) with Csnub ≈ 3–4 × Cpar. Loss ≈ C·V²·fsw ≈ 80 mW per 1 nF at 19 V / 224 kHz (fine in 0805). Snubber placement is fine on both nodes: the SW2 one sits at the edge of L1 pad 2, whose vias drop to Q3/Q4.
+- [ ] **U9 tab:** no vias and a 17 mm² pour. Fine now that U9 is normally idle, but it would carry the full load if +5V and USB are both absent.
 - [ ] **Bottom signal bundle near Q8/Q9 and L2:** check which nets these are. Keep IMON/ADC/PG lines well away from SW nodes; fan lines are fine.
-- [ ] **C61, C8–C11 PCM1K680MCL1GS:** the 680 code normally means 68 µF, not 680 µF. Confirm the value and that the case matches CP_Elec_10x10.
 - [ ] **C29/C32/C81/C82 (10 µF 0805 on +12V):** expect ~3–4 µF effective at 12 V DC bias. Fine if they're local decoupling; use 1206/1210 if you're counting on the capacitance.
 - [ ] **L1 IHLP-6767 footprint:** pick the exact IHLP-6767 part number with Isat > 22 A and confirm the land pattern matches.
 
@@ -63,6 +60,16 @@ Schematic review status as of 2026-10-22 (rev v9). Footprints are not finalised 
 
 - [x] D16 (BAT54J) adds board +5V to the 3.3 V OR, so the LT3080 is idle whenever the converters are up.
 - [x] LM5175 gate resistors R71–R74 = 3.3 Ω (0402) at the FET gates (≤ 3.3 Ω keeps the 55 ns dead time safe).
+- [x] Crystal Y1: ABM3B-…-10- is CL = 10 pF → 2 × (10 − ~4 pF stray) ≈ 12 pF. C64/C65 = 12 pF is correct.
+- [x] C61, C8–C11 PCM1K680MCL1GS confirmed 68 µF / 80 V / 28 mΩ, 10.3 × 10.3 mm land (input bulk ≈ 68 µF + ceramics, not ~750 µF).
+- [x] Layout DRC: 0 unconnected, 0 parity, no clearance errors (silk only). Zones refilled, TPS25980 clearance and mounting-hole edge issues fixed.
+- [x] Layout checks that pass: gate traces 12–28 mm, each paired with its return (median 0.5–0.6 mm; ζ ≈ 0.85–0.9 with 3.3 Ω); SW1/SW2 12 vias each; ~14 VIN_F vias around Q1; Q8/Q9 8 vias in each drain pad; 5 GND vias at the R3 ground end; Cin 3–7 GND vias each; USB D+/D− 25/26 mm (fine for FS USB).
+- [x] In2 filled with GND under the LM5175 stage (and wherever In2 isn't +12V/+3.3V).
+- [x] CS/CSG Kelvin pair routed side by side (0.4 mm pitch) from R3/NT2 to U1.
+- [x] U1 EP 7 vias, U2 EP 9 vias.
+- [x] Snubber footprints added and wired correctly (SW → R → C → GND).
+- [x] PAD_IN vias on U4/U5 into the In2 +12V plane. U3/U6 have none: there's no +5V plane, and at about 2 A the loss is 20 mW, so none are needed. Ask the fab to plug or cap the via-in-pad holes if that's cheap.
+- [x] DRC clean apart from 8 silkscreen warnings (no dangling tracks or vias).
 - [x] U9 minimum load: 8.2 kΩ on 4V5_STBY (0.52 mA vs 0.5 mA min; 6.8 kΩ gives more margin if needed).
 - [x] 3.3 V rework: U9 LT3080 from VIN_F at 4.3 V (R54 430 kΩ) → D14 OR with VBUS → U10 TLV75533 (EN tied to IN, 10 µF in/out). LT3080 idle when USB is present; USB-only gives a solid 3.3 V (TLV755 dropout ≤ 238 mV at 500 mA, ~25 mV at 50 mA).
 - [x] PB8-BOOT0 10 kΩ pull-down (R65).
