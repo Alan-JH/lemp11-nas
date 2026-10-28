@@ -31718,7 +31718,7 @@
 			(uuid "8c523f16-2753-4905-a4f7-a9f81a014f99")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical.step"
+		(model "${KIPRJMOD}/430450612.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31726,7 +31726,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -41508,7 +41508,7 @@
 			(uuid "2c424ce1-04b7-4130-9685-c64544fdacc9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical.step"
+		(model "${KIPRJMOD}/430450612.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -41516,7 +41516,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -51934,15 +51934,15 @@
 			(uuid "40f53269-8dc8-4bdd-b581-6e6ff5fec09d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_Nano-Fit_105310-xx06_2x03_P2.50mm_Vertical.step"
+		(model "${KIPRJMOD}/1053101206.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 -2.5 5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -90)
 			)
 		)
 	)
@@ -56511,7 +56511,7 @@
 			(uuid "a88e16e6-75f3-40b4-b626-5e2c60f34828")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/Nexperia_CFP15_SOT-1289.step"
+		(model "${KIPRJMOD}/CFP15_SOT1289_NEX.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -56519,7 +56519,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 90)
 			)
 		)
 	)
@@ -59794,7 +59794,7 @@
 			(uuid "ba6e111c-85be-4c30-a8ec-2e2a8e7182e0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/Nexperia_CFP15_SOT-1289.step"
+		(model "${KIPRJMOD}/CFP15_SOT1289_NEX.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -59802,7 +59802,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 90)
 			)
 		)
 	)
